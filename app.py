@@ -28,7 +28,7 @@ def index():
                    " ON games.game_id = sell.game_id" \
                    " INNER JOIN game_search.stores AS stores ON sell.store_id = stores.store_id;"
 
-    app.run(debug=True)
+    #app.run(debug=True)
     database_games = db.sql(query_string)
     
     for i in database_games:
